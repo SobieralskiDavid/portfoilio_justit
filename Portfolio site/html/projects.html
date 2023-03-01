@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel&family=Didact+Gothic&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/quotes.css">
+  
+
+</head>
+
+<body>
+
+    <div class="projection">
+
+
+        <header>
+            <nav>
+                <!-- nav menu seen above breakpoint -->
+                <h1><a id="logo" href="/html/index.html"><span id="break">Breaking</span> <span id="code">Code</span>
+                </h1></a>
+                
+                <a id="clock" onload="currentTime()"></a>
+                
+
+                <div class="menu">
+
+                    <a href="/html/index.html" >Home</a>
+                    <a href="/html/projects.html" class="active">Projects</a>
+                    <a href="about.html">about</a>
+                    <a href="/html/contact.html">Contact</a>
+                </div>
+                <!-- button for hamburger icon -->
+                <button class="hamburger">
+                    <span class="material-icons">menu</span>
+                </button>
+            </nav>
+            <!-- menu seen on activation of on click event -->
+            <div class="ham-menu">
+                <a href="/html/index.html" >Home</a>
+                <a href="/html/projects.html" class="active">Projects</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact</a>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="banner-text">
+                <b><em>
+                        six step</b></em> hover and typeWriter tutorial using <span id="html-orange">HTML</span>, <span
+                    id="css-blue">CSS </span>And <span id="java-yellow">JavaScript</span>.
+            </div>
+
+            <div class="container-pro">
+                <div class="vids-grid">
+                    <div class="flexer stacked">
+                        <h4 class="card__title">Step one <i class="fa-brands fa-html5" style="color: #dd4b25;"></i> <i
+                                class="fa-brands fa-square-js" style="color: #edd718;"></i></h4>
+                        <video src="/videos/script tags vid.mp4" controls muted class="video-card"></video>
+                        <div class="vid-content">
+                            <p class="card__description">Here I have created script tags at the bottom of the body and
+                                linked it to my JS file, next I go into my script file and set up some variables to use
+                                in a function.
+                        </div>
+                    </div>
+                    <div class="flexer stacked">
+                        <h4 class="card__title">Step two <i class="fa-brands fa-square-js" style="color:#edd718"></i>
+                        </h4>
+
+                        <video src="/videos/function.mp4" controls class="video-card"></video>
+                        <div class="vid-content">
+
+                            <p class="card__description">With the creation of script tags and the variables I set up the
+                                function typeWriter(), This function will set the innerHTML of the paragraph tag with
+                                the ID of #type3 and also set the speed of the outputted words. </p>
+                        </div>
+
+
+                    </div>
+                    <div class="flexer stacked">
+                        <h4 class="card__title">Step three <i class="fa-brands fa-html5" style="color: #dd4b25;"></i> <i
+                                class="fa-brands fa-square-js" style="color: #edd718;"></i></h4>
+                        <video src="/videos/onmousover.mp4" controls muted class="video-card"></video>
+                        <div class="vid-content">
+
+                            <p class="card__description">Here we have created an onMouseOver event listener and attached
+                                it to an image, when we hover over
+                                this image the event listener will trigger some action that we will create in the
+                                following steps.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flexer stacked">
+                        <h4 class="card__title">Step four <i class="fa-brands fa-html5" style="color: #dd4b25;"></i> <i
+                                class="fa-brands fa-css3-alt" style="color: #254bdd;"></i></h4>
+                        <video src="/videos/mouse_over style.mp4" controls muted class="video-card"></video>
+                        <div class="vid-content">
+
+                            <p class="card__description">We can now add some style and transition to the hover event, I
+                                gave the image a ID of #mouse_over, then using CSS I created a rotation transformation
+                                effect with the @KeyFrames method, also including a border radius and Yellow border.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flexer stacked">
+                        <h4 class="card__title">Step five <i class="fa-brands fa-html5" style="color: #dd4b25;"></i> <i
+                                class="fa-brands fa-css3-alt" style="color: #254bdd;"></i></h4>
+                        <video src="/videos/type3 style.mp4" controls muted class="video-card"></video>
+                        <div class="vid-content">
+
+                            <p class="card__description">Finally we can style the empty paragraph that will be used to
+                                hold the output of the typeWriter function, I give the paragraph tag an ID of #type3,
+                                then I can style it with all the usual CSS styling properties.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flexer stacked">
+                        <h4 class="card__title">Step six <i class="fa-brands fa-html5" style="color: #dd4b25;"></i> <i
+                                class="fa-brands fa-css3-alt" style="color: #254bdd;"></i> <i
+                                class="fa-brands fa-square-js" style="color: #edd718;"></i> </h4>
+                        <video onmouseover="typeWriter()"
+                            src="/videos/Projects — Mozilla Firefox 2023-02-12 14-21-53.mp4" controls muted
+                            class="video-card" id="mouse_img"></video>
+
+
+                        <p id="type3">
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+        <br><hr>
+
+        <section>
+            <section class="quotes">
+                <h3 id="quotes-title">Random quotes using arrays</h3>
+                <p id="quote-text">Press a button to reveal a new quote, once the quote is in view click on the quote to
+                    change its colour. </p>
+
+                <div class="buttons">
+                    <button class="btn-class"  onclick="inspireQuotes()">Inspirational</button>
+                    <button class="btn-class"  onclick="posQuotes()">Positive</button>
+                    <button class="btn-class"  onclick="fameQuotes()">Famous</button>
+                    <button class="btn-class"  onclick="friendQuotes()">Friendship</button>
+                    <button class="btn-class"  onclick="familyQuotes()">Family</button>
+                    <button class="btn-class"  onclick="randomisedQuotes()">Random</button>
+                </div>
+
+                <div id="quoteDisplay" onclick="get_random_hex_color()"></div>
+              
+            </section>
+            <br><hr>
+            <div class="wrapper">
+                <h1 id="quote-api">Random quotes using an API</h1>
+                <div class="container">
+
+                    <div class="display">
+                        <button class="btn-class" id="generate">Get Quote</button>
+                        <p id="quotes"></p>
+                        <h3 id="author"></h3>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <footer>
+                <div class="feet">
+                    <ul>
+                        <li><a href="https://en-gb.facebook.com/" target="_blank" class="navigation">
+                                <i class='fa fa-facebook fa-lg' style='color:#1877f2'></i></a></li>
+
+                        <li><a href="https://twitter.com/?lang=en-gb" target="_blank" class="navigation"><i
+                                    class='fa fa-twitter fa-lg' style='color: #1da1f2'></i></a></li>
+
+                        <li><a href="https://gb.linkedin.com/" target="_blank" class="navigation">
+                                <i class='fa fa-linkedin-square fa-lg' style='color: #0a66c2'></i></a></li>
+
+                        <li><a href="https://www.instagram.com/" target="_blank" class="navigation">
+                                <i class='fa fa-instagram fa-lg' style='color:#f70183'></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+          
+            <!-- lower footer for legal and cookies -->
+            <div class="flex-feet">
+                <div class="footing">
+                    <a href="https://gdpr.eu/cookies/" target="_blank">Cookies</a>
+                    <a href="https://www.gov.uk/data-protection" target="_blank">Privacy</a>
+                    <a id="copy">&copy <span class="" id="copyright-year"></span> David Sobieralski</a>
+                    <a href="">Email</a>
+                    <a href="">Recognitions</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/de6f349069.js" crossorigin="anonymous"></script>
+    <script src="/java/main.js"></script>
+ 
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

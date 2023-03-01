@@ -1,0 +1,136 @@
+:root{
+  --site-main-yellow:  #fff700;
+}
+
+.quotes {
+    display: block;
+    margin-inline: auto;
+    border: 60%;
+    padding: 2rem
+}
+h3{
+    text-align: center;
+    
+}
+#quoteDisplay{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    padding: 3rem;
+    font-size: 22px;;
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    box-shadow: rgba(0, 200, 255, 0.4) 0px 0px 0px 2px, rgba(0, 238, 255, 0.65) 1px 5px 16px 3px, rgb(122, 123, 106) 0px 1px 0px inset;
+    border-radius: 50px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    
+   
+}
+.btn-class{
+    margin: 1rem;
+    flex:1;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    min-width: 150px;
+    border-radius: 40px;
+    background-color: #515c6742;
+    color: aliceblue;
+    box-shadow: rgba(0, 200, 255, 0.4) 0px 0px 0px 2px, rgba(0, 238, 255, 0.65) 1px 5px 16px 3px, rgb(122, 123, 106) 0px 1px 0px inset;
+}
+.btn-class:hover{
+    border: 2px solid var(--site-main-yellow);
+    transition: 1s
+}
+
+#quotes-title{
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+}
+#quote-text{
+    color:aliceblue;
+    text-align: center;
+    font-size: 22px;
+}
+ 
+.wrapper {
+    width: 70%;
+    display: block;
+    margin-inline: auto;
+    margin-top: 5rem;
+    border-radius: 40px;
+    text-align: center;
+  }
+  
+
+   #quote-api{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    border-radius: 40px 40px 0 0;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+ 
+  }
+   .display{
+    background: #15141451;
+    box-shadow: 0 0 20px rgb(39, 161, 242);
+    border-radius: 40px;
+   
+  } 
+  
+ #quotes {
+    color: #040000;
+    line-height: 1.2;
+    font-size: 19px;
+    border-left: #066dd400;
+    text-align: center;
+    filter: invert(150%) drop-shadow(1px 0px 1rem rgb(186, 187, 171));
+    letter-spacing: 3px;
+  }
+ #quotes::before, #quotes::after{
+    content: '"';
+    color:var(--site-main-yellow);
+    font-size: 30px;
+  }
+
+ 
+  
+  #author::before{
+    content: " @ ";
+    color:#ff0000;
+    
+  }
+  
+ #author{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #02ffee;
+    margin: 10px;
+    background-color: #023b8000;
+    
+  }
+  #generate {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #272424;
+    padding: 10px ;
+    border-radius: 25px;
+    
+  }
+  #generate:hover{
+    
+    background-color: rgb(249, 10, 10);
+    border: 2px solid rgb(255, 0, 0);
+    filter: invert(150%) drop-shadow(1px 0px 1rem rgb(186, 187, 171));
+  }

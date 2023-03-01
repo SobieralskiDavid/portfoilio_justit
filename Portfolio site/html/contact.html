@@ -1,0 +1,98 @@
+
+<html lang="en">
+<head>
+
+        
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <!-- using the materials icons link to create an hamburger icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+ 
+</head>
+<body class="contact-cover">
+<header>
+  
+    <nav>
+        <!-- nav menu seen above breakpoint -->
+        <h1><a id="logo" href="/html/index.html"><span id="break">Breaking</span> <span id="code">Code</span>
+        </h1></a>
+        
+        <a id="clock" onload="currentTime()"></a>
+        
+
+        <div class="menu">
+
+            <a href="/html/index.html" >Home</a>
+            <a href="/html/projects.html">Projects</a>
+            <a href="about.html" class="active">about</a>
+            <a href="/html/contact.html">Contact</a>
+        </div>
+        <!-- button for hamburger icon -->
+        <button class="hamburger">
+            <span class="material-icons">menu</span>
+        </button>
+    </nav>
+    <!-- menu seen on activation of on click event -->
+    <div class="ham-menu">
+        <a href="/html/index.html">Home</a>
+        <a href="/html/projects.html">Projects</a>
+        <a href="/html/about.html">About</a>
+        <a href="/html/contact.html" class="active">Contact</a>
+    </div>
+</header>
+
+<div class="forms">
+    <form  action="form_process.php" method="post">
+        <fieldset>
+         
+         <label id="fname" for="fname" >First name:</label>
+         <input type="text" id="fname" name="fname" placeholder="Enter your first name:"><br>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname"><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email"><br>
+         <label for="birthday">Birthday:</label>
+         <input type="date" id="birthday" name="birthday"><br>
+         <textarea name="comments" id="comments" cols="30" rows="10" placeholder=" Write your comments here:"></textarea>
+         <input type="submit" id="submission" value="Submit">
+        </fieldset>
+       </form>
+    </div>
+<footer>
+    <div class="feet">
+        <ul>
+            <li><a href="https://en-gb.facebook.com/" target="_blank" class="navigation">
+                    <i class='fa fa-facebook fa-lg' style='color:#1877f2'></i></a></li>
+
+            <li><a href="https://twitter.com/?lang=en-gb" target="_blank" class="navigation"><i
+                        class='fa fa-twitter fa-lg' style='color: #1da1f2'></i></a></li>
+
+            <li><a href="https://gb.linkedin.com/" target="_blank" class="navigation">
+                    <i class='fa fa-linkedin-square fa-lg' style='color: #0a66c2'></i></a></li>
+
+            <li><a href="https://www.instagram.com/" target="_blank" class="navigation">
+                    <i class='fa fa-instagram fa-lg' style='color:#f70183'></i></a></li>
+        </ul>
+    </div>
+</footer>
+    
+    <!-- lower footer for legal and cookies -->
+    <div class="flex-feet">
+        <div class="footing">
+            <a href="https://gdpr.eu/cookies/" target="_blank">Cookies</a>
+            <a href="https://www.gov.uk/data-protection" target="_blank">Privacy</a>
+            <a id="copy">&copy <span class="" id="copyright-year"></span> David Sobieralski</a>
+            <a href="">Email</a>
+            <a href="">Recognitions</a>
+        </div>
+    </div>
+    </section>
+</div>
+
+<script src="/java/main.js"></script>  
+</body>

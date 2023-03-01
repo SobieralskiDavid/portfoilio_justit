@@ -1,0 +1,722 @@
+/*resetting the default padding and margin */
+:root{
+    --site-main-yellow:  #fff700;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    margin-bottom: 2rem;
+    text-align: center;
+   
+
+}
+/* this is for the (breaking) webkit filter big text  */
+.trans-txt{
+    background-image:url('/images/pexels-pixabay-50996.jpg');
+    -webkit-text-fill-color: rgba(249, 0, 0, 0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); 
+    font-size: 15vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 6rem
+ } 
+ 
+ /* this is for the (CODE)  webkit filter big text */
+.trans-txt2 {
+    background-image:url('/images/pexels-adonyi-gábor-1400137.jpg');
+   -webkit-text-fill-color: #26ae9c60;
+   -webkit-background-clip: text;
+   -webkit-text-stroke: 4px #ffffff;
+    font-size: 15vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     text-align: center; 
+    margin-top: 5%;
+}
+ /* This is for the 'Building design' phrase */
+.tag {
+    font-size: 6.5vw;
+    color: rgb(255, 255, 255);
+    letter-spacing: 10px;
+    font-style: italic;
+    font-family:monospace;
+    -webkit-animation: glow 1.9s ease-in-out infinite alternate;
+    -moz-animation: glow 1.9s ease-in-out infinite alternate;
+    animation: glow 1.9s ease-in-out infinite alternate;
+   
+}
+@keyframes glow {
+    from {
+      
+      text-shadow: 0 0 00px rgb(107, 112, 73), 0 0 0px rgb(107, 118, 57), 0 0 0px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0), 0 0 0px rgb(5, 172, 250);
+    }
+    to {
+      text-shadow: 0 0 20px #7e1d1d, 0 0 30px #9e1111, 0 0 40px #951a1a, 0 0 50px #846565, 0 0 60px #a46e6e, 0 0 70px #b32b2b, 0 0 80px #c11d1d;
+    }
+  }
+ /* This is for full page image div that all other content is wrapped in*/
+.contains {
+    background: url("/images/pexels-ann-h-1762851\ \(1\).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+  /* This is for the (BREAKING) in the nav logo*/
+#break {
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+ /* This is for the (CODE) in the nav logo*/
+#code {
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* This is for the four dots content break  */
+.dot > .dots{
+    
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    background-color: #00ffea;
+    margin-inline: 3rem;
+    border-radius: 50%;
+    margin-top: 5rem;
+}
+#dot-1{
+    background-color: #e7ff00;
+    box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.65)0px 17px 23px -3px, rgb(0, 0, 0) 0px -3px 0px inset;
+    
+    
+}
+#dot-2{
+    background-color: #7cff01;
+    box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.65)0px 17px 23px -3px, rgb(0, 0, 0) 0px -3px 0px inset;
+}
+#dot-3{
+    background-color: #08f7fe;
+    box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.65)0px 17px 23px -3px, rgb(0, 0, 0) 0px -3px 0px inset;
+}
+#dot-4{
+    background-color: #ff7300;
+   
+    box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.65)0px 17px 23px -3px, rgb(0, 0, 0) 0px -3px 0px inset;
+}
+#dot-1:hover{
+    background-color: #15ff00;
+    
+}
+#dot-2:hover{
+    background-color: #c8ff00;
+}
+#dot-3:hover{
+    background-color: #ff00c3;
+}
+#dot-4:hover{
+    background-color: #ff0000;
+}
+/* styling and positioning the nav bar  */
+nav {
+    position: relative;
+    z-index: 90;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem 1rem;
+    
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 5px solid var(--site-main-yellow);
+}
+/* This is for styling the time */
+#clock{
+    text-align: center;
+    color: var(--site-main-yellow);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* coloring the logo at normal and hover state */
+#logo {
+    text-decoration: none;
+   
+}
+
+ /* setting the videos height and width */
+video {
+    width: 100%;
+    height: auto;
+}
+ /* styling the h1 and positioning with hover */
+ nav h1 {
+    letter-spacing: 5px;
+    padding: 0.5rem 1rem;
+    padding-right: calc(1rem - 5px);
+    border: 3px solidvar(--site-main-yellow);
+    font-size: 16px;
+    text-transform: uppercase;
+}  
+  /* this is the hover state for the logo border */
+
+/* setting display and alignment for the  menu  */
+.menu {
+    display: none;
+    align-items: center;
+    margin: 0 -1rem;
+    padding: 0 1rem
+}
+ /* menu item styling */
+.menu a {
+    margin: 0 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: 0.4s;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+
+
+}
+/* setting an active style for active page */
+.active {
+    
+    font-size: 25px;
+}
+ /* hover styles for active page */
+.active:hover {
+    border-bottom: 3px solid #fff700;
+    color: #00ffea;
+}
+.menu a:hover {
+    color: rgb(251, 255, 0);
+    transition: 0.5s;
+}
+/* styling the hamburger menu when displayed */
+.hamburger {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    width: 2rem 2rem;
+    height: 2rem;
+}
+ /* coloring the hamburger icon */
+.hamburger span {
+    color: aqua;
+    font-size: 2rem;
+   
+    
+}
+ /* this is to position and show the hamburger icon and menu at 800px */
+.ham-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 89;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    color: #918f8f;
+    transform: translateY(-100%);
+    transition: 0.8s;
+    padding-top: 3rem;
+    letter-spacing: 3px;
+
+
+
+
+}
+ /* this is to let the hamburger icon and menu be visible */
+ .ham-menu.is-open {
+    opacity: 1;
+    transform: translate(0);
+} 
+  /* styling the hamburger menu items */
+.ham-menu a {
+    display: block;
+    padding: 3rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.8s;
+    text-transform: uppercase;
+
+}
+.ham-menu a:hover {
+    color: rgb(234, 255, 0);
+    background-color: rgb(0, 0, 0);
+
+}
+/* starting the sections p sections css styling */
+p {
+    padding: 5%;
+    margin: 1.5rem;
+    text-align: left;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    word-spacing: 3px;
+    font-style: italic;
+    font-weight: bold;
+    border-left: 3px solid rgb(0, 0, 0);
+}
+ /* styling the card headers */
+h3 {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    padding: 10px;
+    background-color: var(--site-main-yellow);
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    border-radius: 40px 40px 0px 0px;
+    text-transform: uppercase;
+}
+ /* giving style and flex to the cards using flex and space around */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1;
+}
+ /* styling the individual columns with box shadow and giving width and height */
+.columns > div {
+    width: 400px;
+    margin: 0.5rem;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 40px;
+    box-shadow: rgb(124, 125, 119) 0px 2px 4px, rgba(154, 154, 149, 0.65)0px 17px 23px -3px, rgb(61, 61, 58) 0px -3px 0px inset;
+    background-color: rgb(255, 255, 255);
+    border-top: 3px solid rgba(249, 0, 0, 0);
+}
+ /* giving box shadow to the images to create a stacked effect */
+.image-scale {
+    margin-top: 1rem;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: rgba(173, 167, 167, 0.988) 0px 2px 4px, rgb(95, 94, 94) 0px 17px 13px -3px, rgb(71, 71, 69) 0px 7px 13px -3px, rgb(176, 173, 173) -3px 0px inset;
+    min-height: 300px;
+    max-height: 300px;
+    border-left: 5px solid #c3cecd;
+   
+}
+
+ /* giving a transparent background to the social media icons */
+ .feet{
+    background-color: #000000;
+    margin-top: 2rem;
+    border-top: 5px solid var(--site-main-yellow);
+    border-bottom: 1px solid grey;
+    
+ }
+.feet ul {
+    background: transparent;
+    padding: 10px;
+}
+ /* aligning the social media icons */
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+footer li {
+    list-style-type: none;
+    display: block;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 2rem 0;
+}
+ /* styling the i border and padding */
+footer a i {
+    display: flex;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 20px;
+    margin-inline: .75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    
+   
+    
+}
+  /* hover border effect for social icons */
+footer i:hover {
+    border-bottom: 2px solid var(--site-main-yellow);
+    transition: 0.3s;
+    
+   
+    
+
+}
+hr{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: 2px solid yellow
+}
+ /* footer feet list item styling */
+.flex-feet .footing {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: hsl(0, 0%, 0%);
+    justify-content: center;
+    padding: 20px 20px;
+    /* margin-top: 2rem; */
+    
+    font-size: 26px;
+}
+   /* setting the legal and cookie links style and position */
+.footing a {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: #eee;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.75rem;
+
+}
+#copy{
+    text-align: center;
+    border: none;
+    color:whitesmoke
+}
+/* creating a breakpoint for the hamburger menu */
+@media (min-width: 800px) {
+
+    .ham-menu,
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+   
+
+   
+        
+    }
+    @media (max-width: 800px) {
+}
+        #java-yellow,
+        #css-blue,
+        #html-orange{
+            font-size: 1em;
+        }
+              /* This is the end of index.html css styling */
+
+                         /* css for projects page */
+               /* this is the background image for the projects page */
+.projection {
+     background: url("/images/pexels-marcus-lenk-11119775.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    background-blend-mode:color-burn ;
+    background-color: #000000;
+    
+}
+.banner-text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 2rem 15%;
+   
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(106, 255, 0), rgb(0, 200, 255)) 3;  
+}
+#html-orange{
+    color:#dd4b25;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1em;
+  
+}
+#css-blue{
+    color: #254bdd;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1em;
+}
+#java-yellow{
+    color: #edd718;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1em;
+}
+.container-pro {
+        max-width: 100%;
+        margin-inline: auto;
+        padding: 1.5rem;
+} 
+.flexer{
+    box-shadow: rgba(0, 200, 255, 0.4) 0px 0px 0px 2px, rgba(0, 238, 255, 0.65) 1px 5px 16px 3px, rgb(122, 123, 106) 0px 1px 0px inset;
+    background-color: #515c6747;
+    padding: 1rem;
+    border: 2px solid aqua;
+    border-radius: 40px 40px  0 0
+}
+
+
+/* giving the main content container class width, margin and padding */
+
+
+/* giving the div holding all the content a grid display**/
+.vids-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 22rem));
+    justify-content: space-evenly;
+    gap: 2rem;
+    text-align: center;
+   
+
+}
+.card__title {
+   
+    padding: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:aliceblue;
+    background-color: #262728;
+    border-radius: 20px  20px;
+    margin: 1rem;
+    border: 2px solid white;
+}
+
+.vid-content {
+
+   
+    margin: .5rem .5rem 1.5rem;
+    padding: 0.5rem;
+   
+}
+.card__description{
+    color: rgb(255, 255, 255);
+    border-left: 2px solid rgba(255, 255, 255, 0);
+    font-size: 1rem;
+    letter-spacing: 1px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 0;
+    margin: 0  
+}
+.video-card{
+    border-radius: 0px 0px 30px 30px;
+   
+    box-shadow: rgba(0, 200, 255, 0.4) 0px 0px 0px 2px, rgba(0, 238, 255, 0.65) 1px 5px 16px 3px, rgb(122, 123, 106) 0px 1px 0px inset;
+    outline:2px solidvar(--site-main-yellow);
+    
+}
+.video-card:hover{
+     outline: 3px solid aqua;
+}
+
+
+#type3 {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    letter-spacing: 2px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left: #000000;
+}
+
+#mouse_img:hover {
+    animation: rotation 4s ease-in-out;
+    border-radius: 40px;
+    border: 10px solid var(--site-main-yellow);
+    width: 98%;
+    background-color: var(--site-main-yellow);
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input{
+    
+    background-color: #ff000000;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid aqua;
+    padding: 10px
+}
+#submission{
+    background-color: #00ff0da1;
+    color: aliceblue;
+}
+#comments{
+    background-color:  #ff000000;
+    border-radius: 10px;
+    border: 3px solid aqua;
+    resize: none;
+}
+::placeholder{
+    color: var(--site-main-yellow);
+    text-align: center;
+}
+#birthday{
+    color: var(--site-main-yellow)
+}
+
+  
+label{
+    border-radius: 40px;
+  
+    color: #ffffff;
+    padding: 5px;
+}
+input:hover{
+    background-color: rgba(0, 255, 217, 0.228);
+    transition: 0.4s;
+    color: #000000;
+}
+
+.forms{
+    justify-content: center;
+    display: flex;
+   
+    color: #000000;
+  
+    
+}
+.contact-cover{
+    background: url("/images/pexels-chepté-cormani-1416530.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+fieldset{
+    display: grid;
+    margin: 1.5rem;
+   background-color: #00000079;
+    border-radius: 40px;
+  
+    box-shadow: -1px 1px 43px 16px rgb(98, 105, 106);
+-webkit-box-shadow: -1px 1px 43px 16px rgba(244, 244, 244, 0.5);
+    padding: 5px;
+    border: 5px solid rgb(0, 255, 225)
+}
+
+
+  
+  fieldset > * {
+   display: flex;
+   margin: 1rem;
+   justify-content: center;
+   min-width: 400px;
+  
+
+
+  }
+
+
+
+
+
+
+  .history{
+    margin: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+
+}
+.history > .profile{
+    margin: 1rem;
+    background: rgb(21, 186, 232);
+    background: linear-gradient(191deg, rgb(30, 135, 196) 8%, rgb(84, 179, 160) 44%, rgb(47, 88, 132)59%, rgba(39,37,51,1) 80%);
+    border-radius: 20px;
+    border: 3px solid rgb(255, 0, 0);
+ 
+    
+}
+.profile > h3{
+    background-color: rgba(255, 0, 0, 0);
+    margin: 0.75rem;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 2vw;
+    color: whitesmoke;
+    
+    
+
+}
+.profile > p{
+    border: #00ff0d;
+    font-size: clamp(16px, 1.5vw, 2vw);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    
+}
+
+.big-vid{
+    background-color: #000000;
+}
+.profile > img{
+    border-radius: 5px;
+    border-bottom: 3px solid var(--site-main-yellow);
+    border-top: 3px solid var(--site-main-yellow);
+    
+}
+
+
